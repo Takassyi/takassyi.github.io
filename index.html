@@ -1,38 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>My Card</title>
-  <style>
-    body {
-      font-family: Arial;
-      text-align: center;
-      background: #111;
-      color: white;
-      padding: 50px;
-    }
-    .card {
-      background: #222;
-      padding: 30px;
-      border-radius: 10px;
-      display: inline-block;
-    }
-    a {
-      color: #00ccff;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Takassyi</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+}
+
+/* カード */
+.card {
+  margin: 50px auto;
+  padding: 30px;
+  width: 90%;
+  max-width: 350px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+/* アイコン */
+img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* 名前 */
+h1 {
+  margin: 10px 0;
+}
+
+/* ボタン */
+.btn {
+  display: block;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* SNSごと色 */
+.line { background: #06C755; color: white; }
+.insta { background: #E1306C; color: white; }
+.twitter { background: #1DA1F2; color: white; }
+
+/* ホバー */
+.btn:hover {
+  opacity: 0.8;
+}
+</style>
 </head>
+
 <body>
 
 <div class="card">
+
+  <!-- アイコン -->
+  <img src="https://via.placeholder.com/100">
+
   <h1>Takassyi</h1>
   <p>大阪工業大学 情報科学部</p>
   <p>将来：自動車・IT開発</p>
 
-  <hr>
+  <!-- SNS -->
+  <a class="btn line" href="https://line.me/ti/p/あなたのID">LINEで追加</a>
+  <a class="btn insta" href="https://instagram.com/あなたのID">Instagram</a>
+  <a class="btn twitter" href="https://twitter.com/あなたのID">Twitter</a>
 
-  <p><a href="mailto:your@email.com">メール</a></p>
-  <p><a href="https://twitter.com/">Twitter</a></p>
+  <p>気軽に連絡してください！</p>
+
 </div>
 
 </body>
